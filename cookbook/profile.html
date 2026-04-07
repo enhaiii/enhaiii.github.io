@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="./static/style/profile.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="head_content">
+                <img src="./static/media/logo.svg" alt="logo" class="logo">
+                <div class="search">
+                    <input type="text" placeholder="Поиск рецепта.." id="searchInput">
+                    <a href="#" id="searchButton"><img src="./static/media/lupa.svg" alt="lupa" class="lupa"></a>
+                </div>
+                <div class="pages">
+                    <a href="index.html" class="name_page">Рецепты</a>
+                    <button class="sign_in">Войти</button>
+                </div>
+            </div>
+        </div>
+    </header>        
+    <main>
+        <div class="content">
+            <div class="list">
+                <h1>Профиль</h1>
+                <img src="./static/media/avatar.svg" alt="avatar" class="avatar" id="avatar">
+                <button id="changeAvatar" class="grayButton">Изменить фото</button>
+                <input type="file" id="avatarInput" accept="image/*" style="display: none;">
+                <h2 id="name"></h2>
+                <div class="info">
+                    <h3>Email</h3>
+                    <input type="email" placeholder="..." id="email">
+                    <h3>Дата рождения</h3>
+                    <input type="date" placeholder="..." id="birthdate" placeholder="...">
+                    <div class="all_radio">
+                        <div class="gender">
+                            <input type="radio" name="gender" class="radio" id="maleRadio" value="male">
+                            <label for="maleRadio" class="name_gender">М</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" name="gender" class="radio" id="femaleRadio" value="female">
+                            <label for="femaleRadio" class="name_gender">Ж</label>
+                        </div>
+                    </div>
+                    <button id="saveProfileBtn" class="grayButton">Сохранить</button>
+                </div>
+                <button class="logout" id="logoutBtn">Выйти</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="main_footer">
+            <div class="footer_content">
+                <div class="top">
+                    <img src="./static/media/logo.svg" alt="logo" class="logo_footer">
+                    <div class="column">
+                        <p class="text_page">Рецепты</p>
+                        <p class="text_page">Профиль</p>
+                    </div>
+                    <div class="column">
+                        <p class="text_page">Любимое</p>
+                        <p class="text_page">Мои рецепты</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p class="prava">© 2026 Харченко К.А.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="./static/js/profile.js"></script>
+    <script type="module" src="./static/js/header.js"></script>
+</body>
+</html>
