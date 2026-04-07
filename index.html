@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="./static/style/main_style.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="head_content">
+                <img src="./static/media/logo.svg" alt="logo" class="logo">
+                <div class="search">
+                    <input type="text" placeholder="Поиск рецепта.." id="searchInput">
+                    <a href="#" id="searchButton"><img src="./static/media/lupa.svg" alt="lupa" class="lupa"></a>
+                </div>
+                <div class="pages">
+                    <a href="index.html" class="name_page">Рецепты</a>
+                    <button class="sign_in">Войти</button>
+                </div>
+            </div>
+        </div>
+    </header>   
+    <main>
+        <div class="content">
+            <div class="for_all_category">
+                <div class="for_category">
+                    <p class="category">Категории</p>
+                    <a href="#"><img src="./static/media/arrow.svg" alt="arrow" class="arrow_category" id="arrow"></a>
+                </div>
+                <div class="all_category hidden" id="categoryMenu">
+                    <a href="#"><p class="name_category">Завтраки</p></a>
+                    <a href="#"><p class="name_category">Обеды</p></a>
+                    <a href="#"><p class="name_category">Ужины</p></a>
+                    <a href="#"><p class="name_category">Десерты</p></a>
+                    <a href="#"><p class="name_category">Закуски</p></a>
+                    <a href="#"><p class="name_category">Салаты</p></a>
+                    <a href="#"><p class="name_category">Гарниры</p></a>
+                    <a href="#"><p class="name_category">Выпечка</p></a>
+                    <a href="#"><p class="name_category">Напитки</p></a>
+                    <a href="#"><p class="name_category">Соусы и маринады</p></a>
+                    <a href="#"><p class="name_category">Доступные ЗОЖ</p></a>
+                </div>
+            </div>
+            <div class="for_cards" id="recipesContainer">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="main_footer">
+            <div class="footer_content">
+                <div class="top">
+                    <img src="./static/media/logo.svg" alt="logo" class="logo_footer">
+                    <div class="column">
+                        <p class="text_page">Рецепты</p>
+                        <p class="text_page">Профиль</p>
+                    </div>
+                    <div class="column">
+                        <p class="text_page">Любимое</p>
+                        <p class="text_page">Мои рецепты</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p class="prava">© 2026 Харченко К.А.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="./static/js/header.js"></script>
+    <script type="module" src="./static/js/script_main.js"></script>
+</body>
+</html>

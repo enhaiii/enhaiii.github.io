@@ -1,0 +1,469 @@
+@import "null.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    display: flex;
+    width: 1990px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    background-color: #F3F3F3;
+    font-family: "Jost", sans-serif;
+}
+
+header {
+    position: fixed;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+    height: 130px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.13);
+}
+
+.head_content {
+    display: flex;
+    align-items: center;
+    width: 1150px;
+    height: 130px;
+}
+
+.logo {
+    width: 82.5px;
+    margin-left: 70px;
+}
+
+.search {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    margin-left: 85px;
+}
+
+input {
+    border-radius: 9px;
+    border-color: #A2A2A2;
+    border: 2px solid #A2A2A2;
+    width: 398px;
+    height: 40px;
+    color: #000000;
+    font-size: 16px;
+    padding-left: 12px;
+    margin-right: 10px;
+    background-color: #FBFBFB;
+}
+
+input::placeholder {
+    color: #A2A2A2;
+}
+
+.lupa {
+    width: 40px;
+}
+
+.pages {
+    display: flex;
+    margin-left: 60px;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name_page {
+    font-size: 20px;
+}
+
+.favorite {
+    height: 40px;
+}
+
+.profile {
+    height: 40px;
+}
+
+.sign_in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #F6C37B;
+}
+
+.button_sign_in {
+    margin-left: 85px;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.main_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+    height: 275px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: white;
+    box-shadow: 0px -8px 14px 0px rgba(0, 0, 0, 0.13);
+}
+
+.footer_content {
+    width: 650px;
+    height: 225px;
+    margin-top: 25px;
+}
+
+.logo_footer {
+    width: 146px;
+}
+
+.text_page {
+    font-size: 20px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200px;
+    height: 150px;
+}
+
+.top {
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+}
+
+.bottom {
+    display: flex;
+    height: 50px;
+    width: 650px;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.prava {
+    font-size: 20px;
+    color: #333333;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 220px;
+    width: 1280px;
+    margin-bottom: 100px;
+}
+
+.list {
+    background-color: white;
+    width: 800px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 4px 6px 4px 0px rgba(0, 0, 0, 0.1);
+    padding: 44px 59px 44px 59px;
+}
+
+.title_image {
+    width: 660px;
+}
+
+.text_likes {
+    font-size: 16px;
+    color: white;
+}
+
+.star {
+    height: 18px;
+}
+
+span {
+    color: #DBDBDB;
+}
+
+.button_favorite {
+    background-color: white;
+    height: 50px;
+    margin-left: auto;
+}
+
+.for_all_activity {
+    display: flex;
+    width: 660px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.name_recipe {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.description_recipe {
+    width: 660px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 22px;
+    margin-bottom: 18px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.favorite {
+    height: 40px;
+}
+
+.profile {
+    height: 40px;
+}
+
+.all_ingredients {
+    margin-top: 18px;
+    border-radius: 20px;
+    border: 2px solid #FFCA7F;
+    width: 660px;
+    height: auto;
+    padding: 20px 30px 10px 30px;
+    margin-bottom: 40px;
+}
+
+.parametrs {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #FFCA7F;
+    padding-bottom: 8px;
+}
+
+.parametrs:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.name_parametr {
+    font-size: 20px;
+}
+
+.weight_parametr {
+    font-size: 20px;
+}
+
+.name_step {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 9px;
+    align-self: flex-start;
+}
+
+.description_step {
+    font-size: 18px;
+    width: 660px;
+    text-align: justify;
+    line-height: 22px;
+    margin-bottom: 15px;
+    align-self: flex-start;
+}
+
+.image_step {
+    width: 500px;
+    margin-bottom: 15px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.bon_appetit {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.message {
+    font-size: 32px;
+    font-weight: 600;
+    color: #FFCA7F;
+    margin-bottom: 15px;
+}
+
+.list_for_comments {
+    margin-top: 50px;
+    background-color: white;
+    width: 800px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 4px 6px 4px 0px rgba(0, 0, 0, 0.1);
+    padding: 44px 59px 44px 59px;
+}
+
+.title_comment {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 227px;
+}
+
+.count_comm {
+    font-size: 20px;
+    color: #A2A2A2;
+}
+
+.golden_star {
+    width: 20px;
+}
+
+.avg_reviews {
+    font-size: 20px;
+    color: #FFCA7F;
+}
+
+.stars_reviews {
+    display: flex;
+    margin-top: 8px;
+}
+
+.all_comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 660px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.icon {
+    border-radius: 100%;
+    background-color: #D9D9D9;
+    width: 65px;
+    height: 65px;           
+    min-width: 65px;       
+    max-width: 65px;        
+    min-height: 65px;       
+    max-height: 65px;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+.just_comment {
+    display: flex;
+    margin-bottom: 30px;
+    align-self: flex-start;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.comment {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.date {
+    font-size: 14px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.input_comment {
+    margin-top: 20px;
+    width: 660px;
+    height: 120px;
+    color: #000000;
+    font-size: 16px;
+    padding: 10px 10px 70px 10px;
+    text-align: left;
+    vertical-align: top;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.input_comment::placeholder {
+    color: #A2A2A2;
+}
+
+.send {
+    background-color: #FFCA7F;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 160px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.get_all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 240px;
+    height: 40px;
+    background-color: #FFCA7F;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.all_stars {
+    margin-top: 10px;
+}
+
+.greyStar {
+    width: 28px;
+    height: 27px;
+}
+
+.greyStar {
+    cursor: pointer;
+}
+
+.button_favorite {
+    cursor: pointer;
+}
+
+.icon img.avatar-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}

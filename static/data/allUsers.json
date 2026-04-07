@@ -1,0 +1,31 @@
+[
+    {
+        "id": "1",
+        "name": "Максим",
+        "password": "qaz4wsx!9",
+        "email": "maksim@gmail.com",
+        "avatar": "./static/media/maksim.svg",
+        "favorites": [1, 2],
+        "reviews": [1]
+    },
+
+    {
+        "id": "2",
+        "name": "Мария",
+        "password": "123456789Y",
+        "email": "marIII@gmail.com",
+        "avatar": "./static/media/maria.svg",
+        "favorites": [1, 2, 3],
+        "reviews": [2]
+    },
+
+    {
+        "id": "3",
+        "name": "Кира",
+        "password": "cool666COOL",
+        "email": "k1raaA@gmail.com",
+        "avatar": "./static/media/kira.svg",
+        "favorites": [1],
+        "reviews": [3, 4]
+    }
+]
