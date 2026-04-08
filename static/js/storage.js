@@ -158,14 +158,18 @@ export class Storage {
     };
 
     searchRecipes = (searchQuery) => {
-        const allRecipes = this.getRecipe()
-        if (!searchQuery || searchQuery.trim() === "") return allRecipes
-        const query = searchQuery.toLowerCase().trim()
-        return allRecipes.filter(recipe => 
-            recipe.title.toLowerCase().includes(query) ||
-            (recipe.description && recipe.description.toLowerCase().includes(query))
+    const allRecipes = this.getRecipe()
+    if (!searchQuery || searchQuery.trim() === "") return allRecipes
+    const query = searchQuery.toLowerCase().trim()
+    return allRecipes.filter(recipe => {
+        const titleMatch = recipe.title.toLowerCase().includes(query)
+        const descriptionMatch = recipe.description && recipe.description.toLowerCase().includes(query)
+        const ingredientsMatch = recipe.ingredients && recipe.ingredients.some(ingredient =>
+            ingredient.name.toLowerCase().includes(query)
         )
-    }
+        return titleMatch || descriptionMatch || ingredientsMatch
+    })
+}
 
     toggleFavorite = (userId, recipeId) => {
         const users = this.getUsers();

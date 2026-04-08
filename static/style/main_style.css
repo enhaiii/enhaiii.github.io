@@ -149,9 +149,9 @@ footer {
 
 body {
     display: flex;
-    width: 1990px;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
     margin: 0px;
     background-color: #F3F3F3;
     font-family: "Jost", sans-serif;
@@ -353,3 +353,4 @@ body {
 .favorite-btn:hover img {
     transform: scale(1.1);
 }
+

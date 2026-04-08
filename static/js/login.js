@@ -42,7 +42,7 @@ function hideError(element) {
 }
 
 function isValidEmail(email) {
-    const allowedDomains = ['@gmail.com', '@mail.ru'];
+    const allowedDomains = ['@gmail.com', '@mail.ru', '@yandex.ru', '@bk.ru'];
     return allowedDomains.some(domain => email.toLowerCase().endsWith(domain));
 }
 
@@ -57,7 +57,7 @@ function validateNewUser(name, email, password) {
         showError(emailFail, 'Email не может быть пустым');
         isValid = false;
     } else if (!isValidEmail(email)) {
-        showError(emailFail, 'Почта должна оканчиваться на @gmail.com или @mail.ru');
+        showError(emailFail, 'Неверная почта');
         isValid = false;
     } else hideError(emailFail);
     

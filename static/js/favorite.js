@@ -80,7 +80,13 @@ function displayRecipes(recipes, container) {
 function searchFavorites(allFavorites, query) {
     if (!query) return allFavorites;
     const lowerQuery = query.toLowerCase().trim();
-    return allFavorites.filter(recipe => recipe.title.toLowerCase().includes(lowerQuery));
+    return allFavorites.filter(recipe => {
+        const titleMatch = recipe.title.toLowerCase().includes(lowerQuery);
+        const ingredientsMatch = recipe.ingredients && recipe.ingredients.some(ing =>
+            ing.name.toLowerCase().includes(lowerQuery)
+        );
+        return titleMatch || ingredientsMatch;
+    });
 }
 
 async function loadFavorites() {
