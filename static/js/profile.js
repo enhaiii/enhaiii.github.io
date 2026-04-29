@@ -2,7 +2,6 @@ import { Storage } from "./storage.js";
 
 const storage = new Storage();
 
-// Элементы DOM
 const avatarImg = document.getElementById('avatar');
 const changeAvatarBtn = document.getElementById('changeAvatar');
 const avatarInput = document.getElementById('avatarInput');
